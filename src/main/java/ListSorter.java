@@ -1,5 +1,3 @@
-package heapsort;
-
 public class ListSorter implements ListSorterAlgorithm {
     @Override
     public double[] sort(double[] unsortedVector) {
