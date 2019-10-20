@@ -10,7 +10,7 @@ public class Heap<T extends Comparable<T>> implements HeapInterface<T> {
     @Override
     public void put(T item) {
         heap.add(item);
-        reheapifyUpward(Math.floorDiv(heap.size(), 2) - 1);
+        if (heap.size() > 1) reheapifyUpward(Math.floorDiv(heap.size(), 2) - 1);
     }
 
     @Override

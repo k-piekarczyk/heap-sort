@@ -1,10 +1,12 @@
 package heapsort;
 
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class ListSorterTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void sort() {
         double[] unsortedVector = {4, 6, 7, 3, 1, 9, 0, 5};
         double[] correctlySorted = {0, 1, 3, 4, 5, 6, 7, 9};
